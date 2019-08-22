@@ -1,1 +1,1 @@
-include ':app', ':lib_design_pattern_demo'
+include ':app', ':lib_design_pattern_demo', ':lib_example'
