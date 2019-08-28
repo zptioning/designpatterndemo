@@ -48,7 +48,7 @@ public class HasCoin implements State {
 	@Override
 	public void printstate() {
 
-		System.out.println("***HasCoin***");
+		System.out.println("***HasCoinState***");
 
 	}
 

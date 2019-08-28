@@ -2,49 +2,50 @@ package com.zptioning.c13_agentmode.candymachine;
 
 public class SoldOutState implements State {
 
-	private  transient CandyMachine mCandyMachine;
-	public SoldOutState(CandyMachine mCandyMachine)
-	{
-		this.mCandyMachine=mCandyMachine;
-	}
+    private transient CandyMachine mCandyMachine;
 
-	@Override
-	public void insertCoin() {
+    public SoldOutState(CandyMachine mCandyMachine) {
+        this.mCandyMachine = mCandyMachine;
+    }
 
-		System.out.println("you can't insert coin,the machine sold out!");
-		
-	}
+    @Override
+    public void insertCoin() {
 
-	@Override
-	public void returnCoin() {
+        System.out.println("you can't insert coin,the machine sold out!");
 
-		System.out
-		.println("you can't return,you haven't inserted a coin yet!");
+    }
 
-	}
+    @Override
+    public void returnCoin() {
 
-	@Override
-	public void turnCrank() {
+        System.out
+                .println("you can't return,you haven't inserted a coin yet!");
 
-		System.out.println("you turned,but there are no candies!");
-		
-	}
+    }
 
-	@Override
-	public void dispense() {
+    @Override
+    public void turnCrank() {
+
+        System.out.println("you turned,but there are no candies!");
+
+    }
+
+    @Override
+    public void dispense() {
 
 
-	}
+    }
 
-	@Override
-	public void printstate() {
+    @Override
+    public void printstate() {
 
-		System.out.println("***SoldOutState***");
-	
-	}
-	@Override
-	public String getstatename() {
+        System.out.println("***SoldOutState***");
 
-		return "SoldOutState";
-	}
+    }
+
+    @Override
+    public String getstatename() {
+
+        return "SoldOutState";
+    }
 }

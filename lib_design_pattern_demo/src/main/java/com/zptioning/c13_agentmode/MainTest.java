@@ -2,7 +2,7 @@ package com.zptioning.c13_agentmode;
 
 import java.rmi.RemoteException;
 
-import com.java.jikexueyuan.agentmode.candymachine.CandyMachine;
+import com.zptioning.c13_agentmode.candymachine.CandyMachine;
 
 public class MainTest {
 	public static void main(String[] args) throws RemoteException {

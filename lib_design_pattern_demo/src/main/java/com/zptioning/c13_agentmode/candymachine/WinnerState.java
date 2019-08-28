@@ -25,16 +25,13 @@ public class WinnerState implements State {
 	@Override
 	public void turnCrank() {
 
-		System.out
-				.println("we are giving you a candy,turning another get nothing,!");
+		System.out.println("we are giving you a candy,turning another get nothing,!");
 
 	}
 
 	@Override
 	public void dispense() {
 
-
-		
 		mCandyMachine.releaseCandy();
 		if (mCandyMachine.getCount() == 0) {
 			mCandyMachine.setState(mCandyMachine.mSoldOutState);

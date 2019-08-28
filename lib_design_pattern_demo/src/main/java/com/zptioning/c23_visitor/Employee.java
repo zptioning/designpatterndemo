@@ -1,6 +1,6 @@
 package com.zptioning.c23_visitor;
 
-import com.java.jikexueyuan.visitor.mode.Visitor;
+import com.zptioning.c23_visitor.mode.Visitor;
 
 public class Employee {
 

@@ -106,7 +106,7 @@ public class CandyMachine {
 			break;
 		case HasCoin:
 
-			System.out.println("***HasCoin***");
+			System.out.println("***HasCoinState***");
 
 			break;
 		case SoldState:

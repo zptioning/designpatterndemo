@@ -1,59 +1,60 @@
 package com.zptioning.c13_agentmode.dyn;
 
-public class PersonBeanImpl implements PersonBean{
-	String name;
-	String gender;
-	String interests;
-	int rating;
-	int ratingcount=0;
-	@Override
-	public String getName() {
+public class PersonBeanImpl implements PersonBean {
+    String name;
+    String gender;
+    String interests;
+    int rating;
+    int ratingcount = 0;
 
-		return name;
-	}
+    @Override
+    public String getName() {
 
-	@Override
-	public String getGender() {
+        return name;
+    }
 
-		return gender;
-	}
+    @Override
+    public String getGender() {
 
-	@Override
-	public String getInterests() {
+        return gender;
+    }
 
-		return interests;
-	}
+    @Override
+    public String getInterests() {
 
-	@Override
-	public int getHotOrNotRating() {
+        return interests;
+    }
 
-		if(ratingcount==0) 		return 0;
-		return (rating/ratingcount);
-	}
+    @Override
+    public int getHotOrNotRating() {
 
-	@Override
-	public void setName(String name) {
+        if (ratingcount == 0) return 0;
+        return (rating / ratingcount);
+    }
 
-		this.name=name;
-	}
+    @Override
+    public void setName(String name) {
 
-	@Override
-	public void setGender(String gender) {
+        this.name = name;
+    }
 
-		this.gender=gender;
-	}
+    @Override
+    public void setGender(String gender) {
 
-	@Override
-	public void setInterests(String interests) {
+        this.gender = gender;
+    }
 
-		this.interests=interests;
-	}
+    @Override
+    public void setInterests(String interests) {
 
-	@Override
-	public void setHotOrNotRating(int rating) {
+        this.interests = interests;
+    }
 
-		this.rating=rating;
-		ratingcount++;
-	}
+    @Override
+    public void setHotOrNotRating(int rating) {
+
+        this.rating = rating;
+        ratingcount++;
+    }
 
 }

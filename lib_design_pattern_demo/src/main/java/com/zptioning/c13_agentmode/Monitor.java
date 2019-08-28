@@ -2,7 +2,7 @@ package com.zptioning.c13_agentmode;
 
 import java.util.ArrayList;
 
-import com.java.jikexueyuan.agentmode.candymachine.CandyMachine;
+import com.zptioning.c13_agentmode.candymachine.CandyMachine;
 
 public class Monitor {
 	private ArrayList<CandyMachine> candyMachinelst;
