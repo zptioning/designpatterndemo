@@ -1,65 +1,65 @@
 package com.zptioning.c22_protomode.proto;
 
-import java.util.ArrayList;
-import java.util.Random;
-
 import com.zptioning.c22_protomode.EventTemplate;
 
+import java.util.ArrayList;
+
 public class Mail implements Cloneable {
-	private String receiver;
-	private String subject;
-	private String content;
-	private String tail;
-	private ArrayList<String> ars;
-	public Mail(EventTemplate et) {
-		this.tail = et.geteventContent();
-		this.subject = et.geteventSubject();
-	
-	}
+    private String receiver;
+    private String subject;
+    private String content;
+    private String tail;
+    private ArrayList<String> ars;
 
-	@Override
-	public Mail clone() {
-		Mail mail = null;
-		try {
-			mail = (Mail) super.clone();
-			mail.ars = (ArrayList<String>)this.ars.clone();
-		} catch (CloneNotSupportedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return mail;
-	}
+    public Mail(EventTemplate et) {
+        this.tail = et.geteventContent();
+        this.subject = et.geteventSubject();
 
-	public String getReceiver() {
-		return receiver;
-	}
+    }
 
-	public void setReceiver(String receiver) {
-		this.receiver = receiver;
-	}
+    @Override
+    public Mail clone() {
+        Mail mail = null;
+        try {
+            mail = (Mail) super.clone();
+            mail.ars = (ArrayList<String>) this.ars.clone();
+        } catch (CloneNotSupportedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return mail;
+    }
 
-	public String getSubject() {
-		return subject;
-	}
+    public String getReceiver() {
+        return receiver;
+    }
 
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
+    public void setReceiver(String receiver) {
+        this.receiver = receiver;
+    }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
+    public String getSubject() {
+        return subject;
+    }
 
-	public String getContent() {
-		return content;
-	}
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
 
-	public String getTail() {
-		return tail;
-	}
+    public void setContent(String content) {
+        this.content = content;
+    }
 
-	public void setTail(String tail) {
-		this.tail = tail;
-	}
+    public String getContent() {
+        return content;
+    }
+
+    public String getTail() {
+        return tail;
+    }
+
+    public void setTail(String tail) {
+        this.tail = tail;
+    }
 
 }
