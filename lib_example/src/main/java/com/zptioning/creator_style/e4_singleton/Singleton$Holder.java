@@ -14,4 +14,8 @@ public class Singleton$Holder {
     private static class SingletonHolder {
         private static final Singleton$Holder INSTANCE = new Singleton$Holder();
     }
+
+    public void comeOn(){
+        System.out.println("holder style");
+    }
 }

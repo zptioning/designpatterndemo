@@ -22,7 +22,7 @@ package com.zptioning;
  *                    `=---='
  * ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *            佛祖保佑       永无BUG
- * @ClassName ZTest
+ * @ClassName 外观模式
  * @Author zptioning
  * @Date 2019/8/29 10:15
  * @Version 1.0

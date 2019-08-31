@@ -1,7 +1,7 @@
 package com.zptioning.behaviour_style.e2_observer;
 
 /**
- * @ClassName ZTest
+ * @ClassName 外观模式
  * @Author zptioning
  * @Date 2019/8/27 18:10
  * @Version 1.0
