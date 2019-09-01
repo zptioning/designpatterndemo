@@ -12,3 +12,4 @@ public class 享元模式 {
         }
     }
 }
+

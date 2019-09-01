@@ -1,4 +1,4 @@
-package com.zptioning.c23_visitor.mode;
+package com.zptioning.behaviour_style.e23_visitor;
 
 /**
  * @ClassName Element
